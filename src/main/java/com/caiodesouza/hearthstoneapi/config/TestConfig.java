@@ -22,8 +22,8 @@ public class TestConfig implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Card c3 = new Card(null,"white dragon","do something",10,6,CardType.Paladin,CardClass.Creature);
-		Card c4 = new Card(null,"monster","do something",6,9,CardType.Mage,CardClass.Magic);
+		Card c3 = new Card(null,"white dragon","do something",10,6,CardType.Magic,CardClass.Druid);
+		Card c4 = new Card(null,"monster","do something",6,9,CardType.Creature,CardClass.Hunter);
 		
 		cardRepository.saveAll(Arrays.asList(c3,c4));
 		

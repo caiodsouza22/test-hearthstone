@@ -44,6 +44,11 @@ public class CardService {
 		return obj.get();
 		
 	}
+	
+	public Card insert(Card obj) {
+		return repository.save(obj);
+	}
+	
 }
 
 

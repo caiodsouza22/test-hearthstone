@@ -1,9 +1,12 @@
 package com.caiodesouza.hearthstoneapi.entities.enums;
 
 public enum CardClass {
-
-	Magic(1),
-	Creature(2);
+	
+	Mage(1),
+	Paladin(2),
+	Hunter(3),
+	Druid(4),
+	Any(5);
 	
 	
 	private int code;
