@@ -5,6 +5,8 @@
 
 2 - O armazenamento pode ser feito em memória usando um mapa.
 
+## Foi utilizado Spring Boot para a aplicação , o app foi hosteado para facilitar a utilização do mesmo.
+
 # Instruções
 
  ### 1 - Link do projeto no Heroku
