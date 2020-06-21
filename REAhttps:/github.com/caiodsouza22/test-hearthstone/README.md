@@ -64,3 +64,4 @@ https://hearthstone-api-rest.herokuapp.com/cards/
 Deletar carta em que o id é igual a 1: https://hearthstone-api-rest.herokuapp.com/cards/id=1
 
 
+
