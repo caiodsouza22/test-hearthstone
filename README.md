@@ -9,9 +9,11 @@
 
 # Instruções
 
- ### 1 - Link do projeto no Heroku
+ ### 1 - Link do projeto no Heroku / Link para collections no Postman
  ```
  https://hearthstone-api-rest.herokuapp.com
+
+https://www.getpostman.com/collections/c53876b73e03be11c76b
  
  ```
  ### 2 - Como usar os endpoints
