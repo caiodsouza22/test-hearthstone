@@ -7,6 +7,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.caiodesouza.hearthstoneapi.entities.enums.CardClass;
+import com.caiodesouza.hearthstoneapi.entities.enums.CardType;
+
 @Entity
 public class Card implements Serializable{
 	private static final long serialVersionUID = 1L;
@@ -19,6 +22,8 @@ public class Card implements Serializable{
 	private String description;
 	private Integer attack;
 	private Integer defense;
+	private CardType cardType;
+	private CardClass cardClass;
 	
 	public Card() {
 		
@@ -48,13 +53,15 @@ public class Card implements Serializable{
 		this.defense = defense;
 	}
 
-	public Card(Integer id, String name, String description, Integer attack, Integer defense) {
+	public Card(Integer id, String name, String description, Integer attack, Integer defense, CardType cardType,CardClass cardClass) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.attack = attack;
 		this.defense = defense;
+		this.cardType = cardType;
+		this.cardClass = cardClass;
 	}
 
 	public Integer getId() {
@@ -71,6 +78,24 @@ public class Card implements Serializable{
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+
+	public CardType getCardType() {
+		return cardType;
+	}
+
+	public void setCardType(CardType cardType) {
+		this.cardType = cardType;
+	}
+	
+
+	public CardClass getCardClass() {
+		return cardClass;
+	}
+
+	public void setCardClass(CardClass cardClass) {
+		this.cardClass = cardClass;
 	}
 
 	@Override

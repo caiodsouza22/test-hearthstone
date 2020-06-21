@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 import com.caiodesouza.hearthstoneapi.entities.Card;
+import com.caiodesouza.hearthstoneapi.entities.enums.CardClass;
+import com.caiodesouza.hearthstoneapi.entities.enums.CardType;
 import com.caiodesouza.hearthstoneapi.repositories.CardRepository;
 
 @Configuration
@@ -20,10 +22,10 @@ public class TestConfig implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Card c1 = new Card(null,"white dragon","do something",10,6);
-		Card c2 = new Card(null,"monster","do something",6,9);
+		Card c3 = new Card(null,"white dragon","do something",10,6,CardType.Paladin,CardClass.Creature);
+		Card c4 = new Card(null,"monster","do something",6,9,CardType.Mage,CardClass.Magic);
 		
-		cardRepository.saveAll(Arrays.asList(c1,c2));
+		cardRepository.saveAll(Arrays.asList(c3,c4));
 		
 	}
 	
