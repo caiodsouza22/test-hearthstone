@@ -45,18 +45,18 @@ Carta onde id é igual a 1 : https://hearthstone-api-rest.herokuapp.com/cards/id
 ## Consultar carta por nome (GET) : 
 https://hearthstone-api-rest.herokuapp.com/cards/name={name}
 
-Carta onde nome é igual a black dragon: https://hearthstone-api-rest.herokuapp.com/cards/name=dragon
+Carta onde nome é igual a dragon: https://hearthstone-api-rest.herokuapp.com/cards/name=dragon
 
 ## Consultar carta por classe (GET) :
 https://hearthstone-api-rest.herokuapp.com/cards/class={cardClass}
 
-Carta onde classe é igual a Druida : https://hearthstone-api-rest.herokuapp.com/cards/class=Druid
+Carta onde classe é igual a Druid : https://hearthstone-api-rest.herokuapp.com/cards/class=Druid
 
 ## Consultar carta por tipo (GET) :
 
 https://hearthstone-api-rest.herokuapp.com/cards/class={cardType}
 
-Carta onde tipo é igual a Criatura : https://hearthstone-api-rest.herokuapp.com/cards/type=Creature
+Carta onde tipo é igual a Criature : https://hearthstone-api-rest.herokuapp.com/cards/type=Creature
 
 
 ## Deletar carta por id (DELETE) :
